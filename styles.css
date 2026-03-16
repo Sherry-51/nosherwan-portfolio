@@ -2321,3 +2321,53 @@ img {
     min-width: 120px;
   }
 }
+
+/* Legal Page Styles */
+.legal-body .page-header {
+  padding: calc(80px + var(--space-md)) 0 var(--space-sm);
+  background: var(--bg-secondary);
+}
+
+.legal-body .page-header h1 {
+  font-size: 16px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.legal-body .page-header p {
+  font-size: 13px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.legal-page {
+  padding: var(--space-md) 0 var(--space-xl);
+  background: var(--bg-primary);
+}
+
+.legal-page__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-page__content h2 {
+  font-size: 16px;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.legal-page__content p,
+.legal-page__content li {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.legal-page__content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
