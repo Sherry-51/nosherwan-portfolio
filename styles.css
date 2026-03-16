@@ -1635,7 +1635,8 @@ img {
 
 .case-card__metrics {
   display: flex;
-  gap: var(--space-md);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
   padding-top: var(--space-sm);
   border-top: 1px solid rgba(11, 19, 43, 0.08);
 }
@@ -2309,5 +2310,14 @@ img {
   
   .case-study__metric {
     padding: 0.5rem;
+  }
+  
+  .case-card__metrics {
+    gap: 0.75rem;
+  }
+  
+  .case-card__metric {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 120px;
   }
 }
