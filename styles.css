@@ -1028,11 +1028,6 @@ img {
   color: var(--text-primary);
 }
 
-.testimonial__role {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
 /* Testimonial Carousel */
 .testimonial-carousel {
   position: relative;
@@ -1954,6 +1949,24 @@ img {
     margin-top: 1.5rem;
   }
   
+  /* Disable image animations on mobile */
+  .about__image.hidden-element,
+  .case-study.hidden-element,
+  .case-card.hidden-element,
+  .case-study__image,
+  .case-card__image {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .case-study:hover .case-study__image img,
+  .case-card:hover .case-card__image img,
+  .about__image-wrapper:hover img {
+    transform: none !important;
+  }
+
   /* Hero Section */
   .hero {
     min-height: auto;
